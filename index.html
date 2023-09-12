@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galaxy Header</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="galaxy-header">
+        <div class="header-content">
+            <div class="left-section">
+                <div class="logo">
+                    <img src="img/logo.png" alt="Galaxy Logo">
+                </div>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li class="category-menu">
+                            <a href="#">Category</a>
+                            <span class="menu-icon">&#9776;</span>
+                            <div class="dropdown-content">
+                                <a href="#">Sekolah Dasar(SD)</a>
+                                <a href="#">Sekolah Menengah Pertama(SMP)</a>
+                                <a href="#">Sekolah Menengah Akhir(SMA)</a>
+                            </div>
+                        </li>                        
+                        <li><a href="#">Career</a></li>
+                    </ul>
+                </nav>
+                <div class="user-controls">
+                    <button class="sign-in-button">Login/Sign In</button>
+                </div>
+            </div>
+            <div class="search-container">
+                <form action="/search" method="get">
+                    <input class="search expandright" id="searchright" type="search" name="q" placeholder="Search">
+                    <label class="button searchbutton" for="searchright"><span class="mglass">&#9906;</span></label>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        hello
+    </main>
+
+    <footer class="galaxy-footer">
+        <div class="footer-first">
+        <div class="left-column">
+        <div class="footer-column about-us-footer">
+            <h3>About Us</h3>
+            <ul>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Mission</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>        
+        </div>
+        <div class="footer-column support-footer">
+            <h3>Help and Support</h3>
+            <ul>
+                <li><a href="#">English Galaxy FAQs</a></li>
+            </ul>        
+        </div>
+        </div>
+        <div class="right-column">
+        <div class="footer-column social-footer">
+            <h3>Socials</h3>
+            <ul class="social-icons">
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+            </ul>        
+        </div>
+        </div>
+        </div>
+
+        <div class="footer-second">
+            <p>&copy; 2023 English Galaxy. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+
