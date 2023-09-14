@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category</title>
+    <style>
+         body{
+            background-color: #122A46;
+            color: white;
+        }
+        .galaxy-header {
+    background-color:#233954;
+    color: white;
+    text-align: center;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.left-section {
+    display: flex; 
+    align-items: center;
+}
+
+/* Logo styles */
+.logo img {
+	float: left;
+    max-width: 75px; 
+	margin-right: 60px;
+	margin-left: 18px;
+	padding: 5px;
+}
+
+.user-controls {
+	float: right;
+	margin-left: 42px;
+	text-align: center;
+	color: white;
+	cursor: pointer;
+	border-radius: 5px;
+	
+
+}
+
+.button:hover {
+	background-color:#f7941d;
+	color: black;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar li {
+    margin-right: 55px;
+}
+
+.navbar a {
+	padding: 10px 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.navbar a:hover {
+    color: #f7941d; 
+}
+
+.sign-in-button {
+    background-color: transparent;
+	font-weight: bold;
+    color: white;
+    border: 1px solid white;
+    border-radius: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.sign-in-button:hover {
+    background-color:#f7941d;
+	border: none;
+    color:black; /* Change color on hover */
+}
+
+.category-menu{
+	position: relative;
+  	display: inline-block;
+}
+
+.menu-icon {
+    font-size: 15px;
+	transition: color 0.2s ease-in-out; 
+    margin-left: 5px; 
+}
+
+.dropdown-content {
+	margin-top: 5px;
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+  }
+  
+.dropdown-content a {
+	color: black;
+	text-align: left;
+	font-size: 11px;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+  
+.dropdown-content a:hover {
+	background-color:#f7941d;
+	color: white;
+}
+
+.category-menu:hover .dropdown-content {
+	display: block;
+}
+
+.category-menu:hover{
+	color:#f7941d;
+}
+        .judul{
+            text-align: center;
+        }
+        h1{
+            color: #f7941d; 
+            text-decoration-line: underline;
+            text-decoration-style: double;
+        }
+        h2{
+            text-shadow: 3px 3px blue;
+        }
+        .banner_container {
+            clear: both;
+        }
+        .banner_container img {
+            width: 25%;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        .content{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align:justify;
+        }
+        .content p{
+            padding-left: 20px;
+        }
+        .footer-first {
+	display: flex;
+  	flex-wrap: wrap;
+	justify-content: center;
+  	align-content: flex-start;
+	background-color:#233954;
+	color: #fff;
+	padding: 30px;
+  }
+  
+  .footer-column {
+	margin: 0 100px;
+  }
+  
+  .galaxy-footer h3 {
+	font-size: 18px;
+	margin-bottom: 10px;
+	color:#f7941d;
+  }
+  
+  .galaxy-footer ul {
+	list-style-type: none;
+	padding: 0;
+  }
+  
+  .galaxy-footer ul li {
+	margin-bottom: 8px;
+  }
+
+  ul li a{
+	font-size: 14px;
+  }
+  
+  .galaxy-footer ul li a {
+	text-decoration: none;
+	color: #fff;
+	transition: color 0.3s ease;
+  }
+  
+  .galaxy-footer ul li a:hover {
+	color:#aeb3ba; /* Change color on hover */
+  }
+  
+  .social-icons {
+	display: flex;
+	list-style-type: none;
+	padding: 0;
+	margin-top: 10px;
+  }
+  
+  .social-icons li {
+	margin-right: 10px;
+  }
+  
+  .social-icons a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 24px;
+	transition: color 0.3s ease;
+  }
+
+  .footer-second{
+	text-align: center;
+	background-color:#0f1823;
+	color: #fff;
+	padding: 30px;
+  }
+    </style>
+</head>
+<body>
+    <header class="galaxy-header">
+        <div class="header-content">
+            <div class="left-section">
+                <div class="logo">
+                    <img src="img/logo.png" alt="Galaxy Logo">
+                </div>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Tips&Trick</a></li>
+                        <li class="category-menu">
+                            <a href="#">Category</a>
+                            <span class="menu-icon">&#9776;</span>
+                            <div class="dropdown-content">
+                                <a href="#">Sekolah Dasar(SD)</a>
+                                <a href="#">Sekolah Menengah Pertama(SMP)</a>
+                                <a href="#">Sekolah Menengah Akhir(SMA)</a>
+                            </div>
+                        </li>        
+                        <li><a href="#">About Us</a></li>               
+                        <li><a href="#">Career</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </nav>
+                <div class="user-controls">
+                    <button class="sign-in-button">Login/Sign In</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="judul">
+        <h1>SMA</h1>
+        <h2>Narrative Text:</h2>
+    </div>
+    <div class="banner_container">
+        <img src="img/categorysma1.png">
+    </div>
+    <div class="content">
+        <p>A narrative text is a form of storytelling that presents a sequence of events or a story to entertain, inform, or engage the reader. It typically follows a structure that includes characters, setting, plot, and a theme or message. Here's an explanation of the key elements of the narrative text provided:
+        </p>
+        <p>
+            1. Title<br>This is the title of the story, which often gives readers a hint about the theme or focus of the narrative.<br>
+            2. Introduction<br>The narrative begins by introducing the main character, Ella, and her background. It also establishes the setting, a village near a mysterious forest, and hints at Ella's curiosity and love for nature.<br>
+            3. Conflict/Inciting Incident<br>The narrative introduces the central conflict or inciting incident when Ella decides to explore the enchanted forest on her own. This decision sets the story in motion.<br>
+            4. Character Development<br>As Ella ventures into the forest, the narrative provides insight into her character, describing her emotions, thoughts, and reactions to the forest's beauty and mysteries.
+        </p>
+    </div>
+    <footer class="galaxy-footer">
+        <div class="footer-first">
+        <div class="left-column">
+        <div class="footer-column about-us-footer">
+            <h3>About Us</h3>
+            <ul>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Mission</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>        
+        </div>
+        <div class="footer-column support-footer">
+            <h3>Help and Support</h3>
+            <ul>
+                <li><a href="#">English Galaxy FAQs</a></li>
+            </ul>        
+        </div>
+        </div>
+        <div class="right-column">
+        <div class="footer-column social-footer">
+            <h3>Socials</h3>
+            <ul class="social-icons">
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+            </ul>        
+        </div>
+        </div>
+        </div>
+
+        <div class="footer-second">
+            <p>&copy; 2023 English Galaxy. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
