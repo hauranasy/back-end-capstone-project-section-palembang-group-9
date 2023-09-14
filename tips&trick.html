@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tips&Trick</title>
+    <style>
+         body{
+            background-color: #122A46;
+            color: white;
+        }
+        .galaxy-header {
+    background-color:#233954;
+    color: white;
+    text-align: center;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.left-section {
+    display: flex; 
+    align-items: center;
+}
+
+/* Logo styles */
+.logo img {
+	float: left;
+    max-width: 75px; 
+	margin-right: 60px;
+	margin-left: 18px;
+	padding: 5px;
+}
+
+.user-controls {
+	float: right;
+	margin-left: 42px;
+	text-align: center;
+	color: white;
+	cursor: pointer;
+	border-radius: 5px;
+	
+
+}
+
+.button:hover {
+	background-color:#f7941d;
+	color: black;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar li {
+    margin-right: 55px;
+}
+
+.navbar a {
+	padding: 10px 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.navbar a:hover {
+    color: #f7941d; 
+}
+
+.sign-in-button {
+    background-color: transparent;
+	font-weight: bold;
+    color: white;
+    border: 1px solid white;
+    border-radius: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.sign-in-button:hover {
+    background-color:#f7941d;
+	border: none;
+    color:black; /* Change color on hover */
+}
+
+.category-menu{
+	position: relative;
+  	display: inline-block;
+}
+
+.menu-icon {
+    font-size: 15px;
+	transition: color 0.2s ease-in-out; 
+    margin-left: 5px; 
+}
+
+.dropdown-content {
+	margin-top: 5px;
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+  }
+  
+.dropdown-content a {
+	color: black;
+	text-align: left;
+	font-size: 11px;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+  
+.dropdown-content a:hover {
+	background-color:#f7941d;
+	color: white;
+}
+
+.category-menu:hover .dropdown-content {
+	display: block;
+}
+
+.category-menu:hover{
+	color:#f7941d;
+}
+        .judul{
+            font-family:Cambria, Cochin, Georgia;
+            font-size: 22px;
+            font-weight: bold;
+            
+        }
+        .text{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            border-radius: 2px;
+            box-shadow: 50px 10px #258cf4;
+            margin-top: 20px;
+            padding: 30px;
+            text-align: justify;
+            background: #0F4ED8;
+        }
+        p{
+            font-family:cursive;
+        }
+        h2{
+            text-shadow: 3px 3px blue;
+            font-size: 20px;
+            margin-top: 25px;
+        }
+        img{
+            width: 160px;
+            float: left;
+            border-radius: 5px;
+            margin-right: 20px;
+            margin-top: 10px;
+        } 
+        .keterangan p {
+            text-align: justify;
+        }
+        .footer-first {
+	display: flex;
+  	flex-wrap: wrap;
+	justify-content: center;
+  	align-content: flex-start;
+	background-color:#233954;
+	color: #fff;
+	padding: 30px;
+  }
+  
+  .footer-column {
+	margin: 0 100px;
+  }
+  
+  .galaxy-footer h3 {
+	font-size: 18px;
+	margin-bottom: 10px;
+	color:#f7941d;
+  }
+  
+  .galaxy-footer ul {
+	list-style-type: none;
+	padding: 0;
+  }
+  
+  .galaxy-footer ul li {
+	margin-bottom: 8px;
+  }
+
+  ul li a{
+	font-size: 14px;
+  }
+  
+  .galaxy-footer ul li a {
+	text-decoration: none;
+	color: #fff;
+	transition: color 0.3s ease;
+  }
+  
+  .galaxy-footer ul li a:hover {
+	color:#aeb3ba; /* Change color on hover */
+  }
+  
+  .social-icons {
+	display: flex;
+	list-style-type: none;
+	padding: 0;
+	margin-top: 10px;
+  }
+  
+  .social-icons li {
+	margin-right: 10px;
+  }
+  
+  .social-icons a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 24px;
+	transition: color 0.3s ease;
+  }
+
+  .footer-second{
+	text-align: center;
+	background-color:#0f1823;
+	color: #fff;
+	padding: 30px;
+  }
+    </style>
+</head>
+<body>
+    <header class="galaxy-header">
+        <div class="header-content">
+            <div class="left-section">
+                <div class="logo">
+                    <img src="img/logo.png" alt="Galaxy Logo">
+                </div>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Tips&Trick</a></li>
+                        <li class="category-menu">
+                            <a href="#">Category</a>
+                            <span class="menu-icon">&#9776;</span>
+                            <div class="dropdown-content">
+                                <a href="#">Sekolah Dasar(SD)</a>
+                                <a href="#">Sekolah Menengah Pertama(SMP)</a>
+                                <a href="#">Sekolah Menengah Akhir(SMA)</a>
+                            </div>
+                        </li>        
+                        <li><a href="#">About Us</a></li>               
+                        <li><a href="#">Career</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </nav>
+                <div class="user-controls">
+                    <button class="sign-in-button">Login/Sign In</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="judul">Tips & Trick</div>
+    <div class="text">Don't worry if you can't speak English yet. 
+        There are many easy ways to learn English that you can try. <br> After all, to become proficient in a field, we must first learn diligently, right? 
+        Here are 5 ways to learn English for beginners that you can apply.</div>
+    <div class="left_content">
+        <img src="img/konsisten.jpeg">
+        <div class="keterangan">
+                <h2>Consistent Practice</h2>
+                <p>Dedicate daily time to practice English. Give yourself challenges in English. Try to write a short essay or a speech on a topic you are interested in. This will help you improve your writing and speaking skills. In addition to speaking with people in real life, you can also participate in online discussions in English. This can help you practice your writing and speaking skills without having to meet in person.</p>
+        </div>
+        <img src="img/immerse.jpeg">
+        <div class="keterangan">
+                <h2>Immerse Yourself</h2>
+                <p>Set a fixed time every day to practice English. This can be in the morning before work or school or in the evening. Importantly, make it an integral part of your daily routine. Don't just stick to one type of material. Read books, listen to podcasts, watch movies or videos, and take online courses. This variety will help you become accustomed to various language situations.</p>
+        </div>
+        <img src="img/interactive.jpeg">
+        <div class="keterangan">
+                <h2>Interactive Learning</h2>
+                <p>Engage in conversations with native speakers or language partners. This immersive experience will greatly enhance your language skills by providing real-life context and feedback. Additionally, you can explore language exchange meetups, online chat platforms, or language learning apps designed to connect learners with native speakers for conversational practice. </p>
+        </div>
+        <img src="img/vocabulary.jpeg">
+        <div class="keterangan">
+                <h2>Vocabulary Building</h2>
+                <p>Learn new words every day and use them in sentences. This will help you gradually develop your vocabulary and ensure that you truly understand how to use them in the right contexts. This process will help improve your communication skills and give you greater confidence in speaking and writing the language you are learning. So, let's start with new words today!</p>
+        </div>
+        <img src="img/app.jpeg">
+        <div class="keterangan">
+                <h2>Languange Apps</h2>
+                <p>Language learning apps have transformed the way we master new languages, providing a user-friendly and immersive platform for honing reading, writing, speaking, and listening abilities. With a plethora of interactive exercises and activities, these apps make the process of acquiring language skills both convenient and engaging.<br><br></p>
+        </div
+
+    </div>
+<footer class="galaxy-footer">
+        <div class="footer-first">
+        <div class="left-column">
+        <div class="footer-column about-us-footer">
+            <h3>About Us</h3>
+            <ul>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Mission</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>        
+        </div>
+        <div class="footer-column support-footer">
+            <h3>Help and Support</h3>
+            <ul>
+                <li><a href="#">English Galaxy FAQs</a></li>
+            </ul>        
+        </div>
+        </div>
+        <div class="right-column">
+        <div class="footer-column social-footer">
+            <h3>Socials</h3>
+            <ul class="social-icons">
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+            </ul>        
+        </div>
+        </div>
+        </div>
+
+        <div class="footer-second">
+            <p>&copy; 2023 English Galaxy. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
