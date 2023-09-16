@@ -165,16 +165,30 @@
         .content p{
             padding-left: 20px;
         }
-        .footer-first {
-	display: flex;
-  	flex-wrap: wrap;
-	justify-content: center;
-  	align-content: flex-start;
-	background-color:#233954;
-	color: #fff;
-	padding: 30px;
+/*click back and next*/
+.previous {
+   position: relative;
+   text-align: left;
+   padding: 0 25px;
+   top : 16px;
+}
+.next{
+   text-align: right;
+   padding: 0 25px;
+}
+
+/*footer*/
+.footer-first {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-content: flex-start;
+background-color:#233954;
+color: #fff;
+padding: 30px;
   }
   
+  /*footer*/
   .footer-column {
 	margin: 0 100px;
   }
@@ -284,6 +298,12 @@
             &#8226 Look!<br>
             &#8226 Look at me!
         </p>
+    </div>
+    <div class="previous">
+        Previous
+    </div>
+    <div class="next">
+        Next
     </div>
     <footer class="galaxy-footer">
         <div class="footer-first">
