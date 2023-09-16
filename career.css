@@ -24,91 +24,17 @@
   }
 }
 
+.clear{ clear: left; } 
 
-@media screen and (max-width:768px) {
-
-  .right , .left{
-    justify-content: center !important;
-  }
-  #text2{
-    margin-top: 0 !important;
-  
-  }
-}
-/* style goes here */
-
-:root{
-  --blue:#122A46;
+.contentKiri{
+    border: 1px solid black;
 }
 
-
-.titleContent{
-  & span{
-    color: #F7941D;
-  }
-  & h2{
-    font-size: 40px;
-    text-align: center;
-    color: white;
-  }
+.contentKiri h1{
+    font-size: 50px;
 }
 
-.border{
-  border: 1px solid black;
+.span{
+    color: ;
 }
 
-
-.center{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.right{
-  display: flex;
-  justify-content: right;
-  align-items: center;
-}
-
-
-.left{
-  display: flex;
-  justify-content: left;
-  align-items: center;
-}
-
-.card{
-  width: 554px;
-  margin: 0 10px;
-  margin-top: 20px;
-  height: 384px;
-  border-radius: 20px;
-  background-color: white;
-} 
-
-.imgWrap{
-  text-align: center;
-  margin-top: 5%;
-}
-
-#text{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: var(--blue);
-  font-size: 24px;
-  margin-top: -5px;
-}
-
-#text2{
-  text-align: center;
-  padding: 0 30px;
-  font-size: 20px;
-  margin-top: 95px;
-  color: #847D7D;
-
-}
-
-.warnatext{
-  color: #F7941D;
-}
