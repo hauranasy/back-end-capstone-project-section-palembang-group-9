@@ -6,9 +6,9 @@
     <title>Login</title>
     <style>
         body{
-        background-image: url(img/nightsky.jpg);
+        background-image: url(img/bgimage.png);
         background-size: cover;
-        width: 100px;
+        background-repeat: no-repeat;   
 }
 
 .login{
@@ -53,6 +53,7 @@ h1 {
 
 .form-input{
     height: 40px;
+    background: transparent;
     color: #fff;
     border: none;
     border-bottom: 1px solid black;
@@ -64,7 +65,7 @@ h1 {
     background: #f7941d;
     color: #fff;
     font-size: 18px;
-    border: 1px solid #000;
+    border: 1px solid #fff;
     border-radius: 20px;
     outline: none;
     transition: 0.5s ease;
@@ -72,7 +73,7 @@ h1 {
 
 .btn:hover {
     cursor: pointer;
-    background: blue;
+    background: #ff4500
 }
 
 .login a{
@@ -117,7 +118,6 @@ h1 {
 </head>
 
 <body>
-     <div class="background-image"></div>
     <div class="login">
         <img src="img/profil.png"  class="avatar">
         <h1>Login</h1>
