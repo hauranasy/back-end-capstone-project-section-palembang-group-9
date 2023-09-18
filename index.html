@@ -11,7 +11,7 @@
         <div class="header-content">
             <div class="left-section">
                 <div class="logo">
-                    <img src="img/logo.png" alt="Galaxy Logo">
+                    <a href="index.html"><img src="img/logo.png" alt="Galaxy Logo"></a>
                 </div>
                 <nav class="navbar">
                     <ul>
@@ -140,16 +140,7 @@
         </div>
     </div>
 
-    <div class="direction">
-        <button id="prev"> < </button>
-        <button id="next"> > </button>
-    </div>
-    <script src="script.js">
-        document.getElementById('next').onclick = function(){
-        const widthItem = document.querySelector('.item').offsetWidth;
-        document.getElementById('formList').scrollLeft += widthItem;
-    }   
-    </script>
+
 </div>
 
 <footer class="galaxy-footer">
