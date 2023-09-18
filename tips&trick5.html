@@ -3,238 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tips&Trick5</title>
-    <style>
-        body {
-        background:linear-gradient(to top,#0f3462,#09203d, #07182d);
-        margin: 0;
-        padding: 0;
-        font-family: 'Montserrat', sans-serif;
-        width: 100%;
-        color: white;
-    }
-        .galaxy-header {
-    background-color:#233954;
-    color: white;
-    text-align: center;
-}
-
-.header-content {
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
-}
-
-.left-section {
-    display: flex; 
-    align-items: center;
-}
-
-/* Logo styles */
-.logo img {
-	float: left;
-    max-width: 75px; 
-	margin-right: 60px;
-	margin-left: 18px;
-	padding: 5px;
-}
-
-.user-controls {
-	float: right;
-	margin-left: 42px;
-	text-align: center;
-	color: white;
-	cursor: pointer;
-	border-radius: 5px;
-	
-
-}
-
-.button:hover {
-	background-color:#f7941d;
-	color: black;
-}
-
-.navbar ul {
-    list-style: none;
-    display: flex;
-}
-
-.navbar li {
-    margin-right: 55px;
-}
-
-.navbar a {
-	padding: 10px 5px;
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    font-size: 15px;
-}
-
-.navbar a:hover {
-    color: #f7941d; 
-}
-
-.sign-in-button {
-    background-color: transparent;
-	font-weight: bold;
-    color: white;
-    border: 1px solid white;
-    border-radius: 25px;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-}
-
-.sign-in-button:hover {
-    background-color:#f7941d;
-	border: none;
-    color:black; /* Change color on hover */
-}
-
-.category-menu{
-	position: relative;
-  	display: inline-block;
-}
-
-.menu-icon {
-    font-size: 15px;
-	transition: color 0.2s ease-in-out; 
-    margin-left: 5px; 
-}
-
-.dropdown-content {
-	margin-top: 5px;
-	display: none;
-	position: absolute;
-	background-color: #f9f9f9;
-	min-width: 160px;
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-	z-index: 1;
-  }
-  
-.dropdown-content a {
-	color: black;
-	text-align: left;
-	font-size: 11px;
-	padding: 12px 16px;
-	text-decoration: none;
-	display: block;
-}
-  
-.dropdown-content a:hover {
-	background-color:#f7941d;
-	color: white;
-}
-
-.category-menu:hover .dropdown-content {
-	display: block;
-}
-
-.category-menu:hover{
-	color:#f7941d;
-}
-        .judul{
-            font-family:Cambria, Cochin, Georgia;
-            font-size: 22px;
-            font-weight: bold;   
-        }     
-        h2{
-            text-shadow: 3px 3px blue;
-        }
-        .banner_container {
-            clear: both;
-    }
-        .banner_container img {
-            width: 25%;
-            margin-left: auto;
-            margin-right: auto;
-            display: block;
-            border-radius: 5px;
-    }
-    p{
-        font-family:cursive;
-        text-align: justify;
-    }
-    .content{
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        margin-top: 20px;
-        margin-bottom: 30px;
-    }
-    .content p{
-        text-align: justify;
-        background-color:#808080;
-        padding: 10px;
-    }
-    .footer-first {
-	display: flex;
-  	flex-wrap: wrap;
-	justify-content: center;
-  	align-content: flex-start;
-	background-color:#233954;
-	color: #fff;
-	padding: 30px;
-  }
-  
-  .footer-column {
-	margin: 0 100px;
-  }
-  
-  .galaxy-footer h3 {
-	font-size: 18px;
-	margin-bottom: 10px;
-	color:#f7941d;
-  }
-  
-  .galaxy-footer ul {
-	list-style-type: none;
-	padding: 0;
-  }
-  
-  .galaxy-footer ul li {
-	margin-bottom: 8px;
-  }
-
-  ul li a{
-	font-size: 14px;
-  }
-  
-  .galaxy-footer ul li a {
-	text-decoration: none;
-	color: #fff;
-	transition: color 0.3s ease;
-  }
-  
-  .galaxy-footer ul li a:hover {
-	color:#aeb3ba; /* Change color on hover */
-  }
-  
-  .social-icons {
-	display: flex;
-	list-style-type: none;
-	padding: 0;
-	margin-top: 10px;
-  }
-  
-  .social-icons li {
-	margin-right: 10px;
-  }
-  
-  .social-icons a {
-	text-decoration: none;
-	color: #fff;
-	font-size: 24px;
-	transition: color 0.3s ease;
-  }
-
-  .footer-second{
-	text-align: center;
-	background-color:#0f1823;
-	color: #fff;
-	padding: 30px;
-  }
-    </style>
+    <title>Tips&Trick</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header class="galaxy-header">
@@ -245,76 +16,89 @@
                 </div>
                 <nav class="navbar">
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Tips&Trick</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="about.html">About Us</a></li>
                         <li class="category-menu">
                             <a href="#">Category</a>
                             <span class="menu-icon">&#9776;</span>
                             <div class="dropdown-content">
-                                <a href="#">Sekolah Dasar(SD)</a>
-                                <a href="#">Sekolah Menengah Pertama(SMP)</a>
-                                <a href="#">Sekolah Menengah Akhir(SMA)</a>
+                                <a href="category_sd1.html">Sekolah Dasar(SD)</a>
+                                <a href="category_smp1.html">Sekolah Menengah Pertama(SMP)</a>
+                                <a href="category_sma1.html">Sekolah Menengah Akhir(SMA)</a>
                             </div>
-                        </li>        
-                        <li><a href="#">About Us</a></li>               
-                        <li><a href="#">Career</a></li>
-                        <li><a href="#">Blog</a></li>
+                        </li>                        
+                        <li><a href="career.html">Career</a></li>
+                        <li><a href="tips&trick.html">Tips & Trick</a></li>
                     </ul>
-                </nav>
-                <div class="user-controls">
-                    <button class="sign-in-button">Login/Sign In</button>
-                </div>
+                </nav>            
             </div>
+           <div class="user-controls">
+            <a href="login.html">
+                <button class="sign-in-button">Login/Sign In</button>
+            </a>
+           </div>
         </div>
     </header>
-    <div class="judul">Tips & Trick</div>
+
+<div class="main-tips">
+<div class="judul">
+    <h1>Tips & Tricks</h1>
     <h2>Language Apps: Utilize language learning apps for interactive lessons.</h2>
-    <div class="banner_container">
-        <img src="img/g6.png">
+</div>
+<div class="banner_container">
+    <img src="img/g6.png">
+</div>
+<p>Language apps are a highly useful tool for beginners and those at intermediate levels when learning a new language. These apps enable users to develop basic skills such as ordering coffee or discussing everyday topics in the target language. However, it's important to remember that achieving high proficiency in a language requires a deeper level of understanding, and there are several ways to accomplish this.</p>
+<div class="content">
+    <h3>Here's how you can effectively utilize language learning apps:</h3>
+    <h4>1. Consistent Practice</h4>
+   <p>Regular practice is crucial. Set aside a specific time each day or week to learn the language, as many apps offer challenges or daily tasks to motivate consistent usage. The importance of consistency in language learning cannot be underestimated. Scheduling dedicated time for language study helps build a strong habit. It also allows your brain to absorb the language knowledge better as you provide opportunities to soak in language information regularly.</p>
+    <h4>2. Speaking and Pronunciation</h4> 
+        <p>Speaking aloud is a vital component of language learning, as it helps you become more comfortable with the sounds and rhythms of the language. Whether you're practicing with a language partner, recording yourself, or using speech recognition features in language learning apps, the act of vocalizing words and phrases will improve your speaking skills significantly.</p> 
+    <h4>3. Engage with the Community</h4>
+        <p>Additionally, these language learning apps often incorporate user communities, creating a space where learners can interact, share insights, and seek guidance from others on similar language-learning journeys. By becoming part of these communities, you can find motivation through the support of fellow learners and even explore valuable language exchange opportunities, allowing you to practice speaking with native speakers in a real-world context while helping them learn your language in return. </p>
+</div>
+<div class="change-page">
+    <a href="tips&trick4.html" id="previous">&#8592 Previous</a>
+    <a href=# id="next" hidden>Next &#8594</a>
+</div>
+</div>
+
+<footer class="galaxy-footer">
+    <div class="footer-first">
+       <div class="left-column">
+          <div class="footer-column about-us-footer">
+             <h3>About Us</h3>
+                <ul>
+                   <li><a href="blog.html">Blog</a></li>
+                   <li><a href="category_sd1.html">Category</a></li>
+                   <li><a href="career.html">Career</a></li>
+                </ul>        
+          </div>
+          <div class="footer-column support-footer">
+             <h3>Help and Support</h3>
+                <ul>
+                   <li><a href="faq.html">English Galaxy FAQs</a></li>
+                </ul>        
+          </div>
     </div>
-    <p>Language apps are a highly useful tool for beginners and those at intermediate levels when learning a new language. These apps enable users to develop basic skills such as ordering coffee or discussing everyday topics in the target language. However, it's important to remember that achieving high proficiency in a language requires a deeper level of understanding, and there are several ways to accomplish this.</p>
-    <h2>Here's how you can effectively utilize language learning apps:</h2>
-    <div class="content">1. Consistent Practice
-       <p>Regular practice is crucial. Set aside a specific time each day or week to learn the language, as many apps offer challenges or daily tasks to motivate consistent usage. The importance of consistency in language learning cannot be underestimated. Scheduling dedicated time for language study helps build a strong habit. It also allows your brain to absorb the language knowledge better as you provide opportunities to soak in language information regularly.</p>
-        <div>2. Speaking and Pronunciation</div> 
-            <p>Speaking aloud is a vital component of language learning, as it helps you become more comfortable with the sounds and rhythms of the language. Whether you're practicing with a language partner, recording yourself, or using speech recognition features in language learning apps, the act of vocalizing words and phrases will improve your speaking skills significantly.</p> 
-        <div>3. Engage with the Community</div>
-            <p>Additionally, these language learning apps often incorporate user communities, creating a space where learners can interact, share insights, and seek guidance from others on similar language-learning journeys. By becoming part of these communities, you can find motivation through the support of fellow learners and even explore valuable language exchange opportunities, allowing you to practice speaking with native speakers in a real-world context while helping them learn your language in return. </p>
-    </div>
-    <footer class="galaxy-footer">
-        <div class="footer-first">
-        <div class="left-column">
-        <div class="footer-column about-us-footer">
-            <h3>About Us</h3>
-            <ul>
-                <li><a href="#">Courses</a></li>
-                <li><a href="#">Mission</a></li>
-                <li><a href="#">Contact Us</a></li>
-            </ul>        
-        </div>
-        <div class="footer-column support-footer">
-            <h3>Help and Support</h3>
-            <ul>
-                <li><a href="#">English Galaxy FAQs</a></li>
-            </ul>        
-        </div>
-        </div>
-        <div class="right-column">
-        <div class="footer-column social-footer">
-            <h3>Socials</h3>
-            <ul class="social-icons">
+    <div class="right-column">
+       <div class="footer-column social-footer">
+          <h3>Socials</h3>
+             <ul class="social-icons">
                 <li><a href="#"><i class="fab fa-facebook"></i></a></li>
                 <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                 <li><a href="#"><i class="fab fa-instagram"></i></a></li>
                 <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
-            </ul>        
-        </div>
-        </div>
-        </div>
+             </ul>        
+       </div>
+    </div>
+    </div>
 
-        <div class="footer-second">
-            <p>&copy; 2023 English Galaxy. All Rights Reserved.</p>
-        </div>
-    </footer>
-    </body>
+    <div class="footer-second">
+        <p>&copy; 2023 English Galaxy. All Rights Reserved.</p>
+    </div>
+</footer>
+</body>
 </html>
