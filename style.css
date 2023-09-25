@@ -464,10 +464,12 @@ body {
 /* CSS untuk mengatur gambar */
 .right-image img{
      height: 100%;
+     cursor: pointer;
 }
 
 .left-section img{
     width: 100%;
+    cursor: pointer;
 }
 
 .blog-content{
@@ -478,6 +480,7 @@ body {
 .blog-image{
     width: 350px;
     height: 200px;
+    cursor: pointer;
 }
 
 .blog-description{
@@ -513,7 +516,56 @@ body {
     text-decoration: none;
     color: white;
 }
+/*untuk responsif blog*/
+    @media (max-width: 768px) {
+    .judul h2 {
+        text-align: center;
+        margin-left: 0;
+    }
 
+    .judul h3 {
+        margin-left: 0;
+    }
+
+    .top-section {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    .right-section {
+        margin-right: 0;
+        gap: 20px;
+    }
+
+    .blog-content {
+        margin: 20px;
+    }
+
+    .blog-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .blog-description {
+        margin-left: 0;
+    }
+
+    .caption {
+        width: 100%;
+        font-size: 18px;
+        text-align: center;
+        bottom: 0;
+        padding: 10px 0;
+    }
+
+    .blog-caption {
+        font-size: 20px;
+    }
+
+    .blog-author {
+        font-size: 16px;
+    }
+}
 
 /*Article*/
 .maincontainer {
@@ -674,6 +726,7 @@ h2{
 }
 .banner_container img {
     width: 30%;
+    cursor: pointer;/*perubahan di kursor*/
     margin-left: auto;
     margin-right: auto;
     display: block;
