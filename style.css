@@ -758,8 +758,6 @@ h2{
 }
 
 /*Career*/
-
-
 .col-6 {width: 50%;}
 .col-12 {width: 100%;}
 
@@ -1236,4 +1234,338 @@ h2{
 	color: #fff;
 	padding: 30px;
   }
- 
+
+ /*responsif untuk navigasi*/
+ /* Media Queries for Tablet */
+@media (max-width: 768px) {
+    .navbar li {
+        margin-right: 20px;
+    }
+    .sign-in-button {
+        margin-right: 10px;
+    }
+    /* Modify <a> tag styles for tablets */
+    .navbar a {
+        font-size: 14px;
+    }
+}
+
+/* Media Queries for Mobile Phones */
+@media (max-width: 480px) {
+    .navbar {
+        display: none;
+    }
+    .navbar-phone {
+        display: block;
+    }
+    /* Modify <a> tag styles for mobile phones */
+    .navbar-phone a {
+        font-size: 12px;
+    }
+}
+
+/*responsif untuk footer*/
+    @media (max-width: 768px) {
+        .footer-column {
+            margin: 0 20px; /* Adjust margins for smaller screens */
+        }
+    
+        .galaxy-footer h3 {
+            font-size: 16px; /* Decrease font size for headings */
+        }
+    
+        ul li a {
+            font-size: 12px; /* Decrease font size for links */
+        }
+    
+        .social-icons a {
+            font-size: 20px; /* Decrease font size for social icons */
+        }
+    }
+    
+    /* Media Queries for Mobile Phones */
+    @media (max-width: 480px) {
+        .footer-column {
+            margin: 0 10px; /* Adjust margins for smaller screens */
+        }
+    
+        .galaxy-footer h3 {
+            font-size: 14px; /* Decrease font size for headings */
+        }
+    
+        ul li a {
+            font-size: 10px; /* Decrease font size for links */
+        }
+    
+        .social-icons a {
+            font-size: 18px; /* Decrease font size for social icons */
+        }
+    }
+    @media (max-width: 768px) {
+        .maincontainer {
+            margin: 0 20px; /* Adjust margin for smaller screens */
+        }
+    
+        .center-image img {
+            width: 100%; /* Make images fill the screen width */
+            max-width: none;
+        }
+    }
+
+/*responsif untuk artikel*/
+
+    /* Media Queries for Mobile Phones */
+    @media (max-width: 480px) {
+        .maincontainer {
+            margin: 0 10px; /* Adjust margin for smaller screens */
+        }
+    
+        .maincontainer h1 {
+            font-size: 24px; /* Decrease heading font size */
+        }
+    
+        .center-image img {
+            width: 100%; /* Make images fill the screen width */
+            max-width: none;
+        }
+    
+        .maincontainer p {
+            font-size: 14px; /* Decrease paragraph font size */
+        }
+    
+        .maincontainer .changepage {
+            margin-top: 30px; /* Adjust spacing for smaller screens */
+        }
+    
+        .maincontainer .changepage a {
+            font-size: 16px; /* Decrease font size for page change links */
+        }
+    }   
+/*responsive untuk about us*/
+@media (max-width: 480px) {
+    .introduction {
+        margin: 0 10px; /* Adjust margin for smaller screens */
+    }
+
+    .introduction h1 {
+        font-size: 24px; /* Decrease heading font size */
+    }
+
+    .introduction p {
+        padding: 0 10px; /* Adjust padding for smaller screens */
+        font-size: 16px; /* Decrease font size */
+    }
+
+    .content {
+        margin-top: 20px; /* Adjust spacing for smaller screens */
+        padding: 20px 0; /* Adjust padding for smaller screens */
+    }
+
+    .content h2 {
+        font-size: 22px; /* Decrease heading font size */
+    }
+
+    .content p {
+        font-size: 14px; /* Decrease paragraph font size */
+    }
+
+    .profile-card {
+        width: 140px; /* Adjust card width for smaller screens */
+    }
+
+    .profile-picture {
+        width: 80px; /* Adjust profile picture size for smaller screens */
+        height: 80px;
+        margin-bottom: 15px; /* Adjust margin for smaller screens */
+    }
+
+    .profile-picture img {
+        width: 80px;
+        height: 80px;
+    }
+}
+/*responsif untuk category*/
+@media (max-width: 768px) {
+    .main-category h2 {
+        margin: 0 20px; /* Adjust margins for smaller screens */
+    }
+
+    .banner_container img {
+        width: 70%; /* Adjust image width for tablets */
+        margin: 0 auto; /* Center-align the image */
+    }
+
+    .main-category .content {
+        margin: 0 20px; /* Adjust margins for smaller screens */
+    }
+
+    .change-page {
+        flex-direction: column; /* Stack links vertically for tablets */
+        align-items: center; /* Center-align links */
+    }
+}
+
+@media (max-width: 480px) {
+    .main-category h2 {
+        margin: 0 10px; /* Adjust margins for smaller screens */
+    }
+
+    .banner_container img {
+        width: 90%; /* Adjust image width for mobile phones */
+    }
+
+    .main-category .content {
+        margin: 0 10px; /* Adjust margins for smaller screens */
+    }
+
+    .change-page {
+        flex-direction: column; /* Stack links vertically for mobile phones */
+        align-items: center; /* Center-align links */
+    }
+}
+/*responsive untuk tips&trik*/
+/*for tablet*/
+@media (max-width: 768px) {
+    .main-tips .text {
+        margin: 20px; /* Adjust margin for smaller screens */
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    .main-tips .text p {
+        font-size: 18px; /* Decrease font size for paragraphs */
+    }
+
+    .tips img {
+        width: 100px; /* Adjust image size for smaller screens */
+        margin-right: 10px; /* Adjust spacing for smaller screens */
+    }
+
+    .column {
+        gap: 10px; /* Adjust spacing for smaller screens */
+    }
+
+    .column img {
+        max-width: 100%;
+    }
+
+    .movie_content {
+        flex-direction: column; /* Change to column layout for smaller screens */
+    }
+
+    .movie_content img {
+        float: none; /* Clear the float for smaller screens */
+        max-width: 100%;
+    }
+}
+
+/* Media Queries for Mobile Phones */
+@media (max-width: 480px) {
+    .main-tips {
+        margin: 0 10px; /* Adjust margin for smaller screens */
+    }
+
+    .main-tips h3 {
+        font-size: 24px; /* Decrease heading font size */
+    }
+
+    .main-tips .text {
+        margin: 10px; /* Adjust margin for smaller screens */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .main-tips .text p {
+        font-size: 16px; /* Decrease font size for paragraphs */
+    }
+
+    .tips img {
+        width: 80px; /* Adjust image size for smaller screens */
+        margin-right: 10px; /* Adjust spacing for smaller screens */
+    }
+
+    .column {
+        gap: 10px; /* Adjust spacing for smaller screens */
+    }
+
+    .column img {
+        max-width: 100%;
+    }
+
+    .movie_content {
+        flex-direction: column; /* Change to column layout for smaller screens */
+    }
+
+    .movie_content img {
+        float: none; /* Clear the float for smaller screens */
+        max-width: 100%;
+    }
+}
+
+ /*responsive untuk login*/
+    @media (max-width: 768px) {
+        .login {
+            width: 90%;
+            max-width: 320px;
+            margin: 0 auto;
+            padding: 30px;
+        }
+    
+        .login .avatar {
+            width: 60px;
+            height: 60px;
+            top: -10%;
+        }
+    
+        .login h1 {
+            font-size: 20px;
+        }
+    
+        .login p {
+            font-size: 14px;
+        }
+    
+        .login input,
+        .form-input {
+            height: 30px;
+            font-size: 14px;
+        }
+    
+        .login .btn {
+            height: 30px;
+            font-size: 16px;
+        }
+    }
+    
+    /* Media Queries for Mobile Phones */
+    @media (max-width: 480px) {
+        .login {
+            width: 90%;
+            max-width: 320px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+    
+        .login .avatar {
+            width: 50px;
+            height: 50px;
+            top: -10%;
+        }
+    
+        .login h1 {
+            font-size: 18px;
+        }
+    
+        .login p {
+            font-size: 12px;
+        }
+    
+        .login input,
+        .form-input {
+            height: 25px;
+            font-size: 12px;
+        }
+    
+        .login .btn {
+            height: 25px;
+            font-size: 14px;
+        }
+    }
