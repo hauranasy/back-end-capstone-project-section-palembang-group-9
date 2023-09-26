@@ -129,33 +129,6 @@ body {
 .category-menu:hover{
 	color:#f7941d;
 }
-/* Media Queries for Tablet */
-@media (max-width: 768px) {
-    .navbar li {
-        margin-right: 20px;
-    }
-    .sign-in-button {
-        margin-right: 10px;
-    }
-
-    .navbar a {
-        font-size: 14px;
-    }
-}
-
-/* Media Queries for Mobile Phones */
-@media (max-width: 480px) {
-    .navbar {
-        display: none;
-    }
-    .navbar-phone {
-        display: block;
-    }
-    /* Modify <a> tag styles for mobile phones */
-    .navbar-phone a {
-        font-size: 12px;
-    }
-}
 
 /*Index*/
 .home{
@@ -609,8 +582,7 @@ body {
 }
     
 .center-image img {
-    display: flex;
-    align-items: center;
+    display: block;
     margin: 0 auto;
     width: 500px;
     max-width: 100%;
@@ -644,45 +616,6 @@ body {
     text-decoration: none;
     color:#F7941D;
 }
-@media (max-width: 768px) {
-    .maincontainer {
-        margin: 0 20px; /* Adjust margin for smaller screens */
-    }
-
-    .center-image img {
-        width: 100%; /* Make images fill the screen width */
-        max-width: none;
-    }
-}
-
-/* Media Queries for Mobile Phones */
-@media (max-width: 480px) {
-    .maincontainer {
-        margin: 0 10px; 
-    }
-    }
-
-    .maincontainer h1 {
-        font-size: 24px; 
-    }
-
-    .center-image img {
-        width: 100%; 
-        max-width: none;
-    }
-
-    .maincontainer p {
-        font-size: 14px; 
-    }
-
-    .maincontainer .changepage {
-        margin-top: 30px; 
-    }
-
-    .maincontainer .changepage a {
-        font-size: 16px; 
-    }
-
 /*About Us*/
 
 .introduction{
@@ -728,7 +661,6 @@ body {
 .content p{
     color: white;
     font-size: 19px;
-    
 }
 
 .content img{
@@ -784,87 +716,6 @@ h2{
     object-fit: cover;
     object-position: 100% 25%;
 }
-@media (max-width: 768px) {
-    .introduction {
-        margin: 0 20px; /* Adjust margin for smaller screens */
-    }
-
-    .introduction p {
-        padding: 0 20px; 
-        font-size: 18px; 
-
-    .content {
-        margin-top: 30px; /* Adjust spacing for smaller screens */
-        padding: 30px 0; /* Adjust padding for smaller screens */
-    }
-
-    .content h2 {
-        font-size: 26px; /* Decrease heading font size */
-    }
-
-    .content p {
-        font-size: 16px; /* Decrease paragraph font size */
-    }
-
-    .profile-card {
-        width: 160px; /* Adjust card width for smaller screens */
-    }
-
-    .profile-picture {
-        width: 100px; /* Adjust profile picture size for smaller screens */
-        height: 100px;
-        margin-bottom: 20px; /* Adjust margin for smaller screens */
-    }
-
-    .profile-picture img {
-        width: 100%;
-        height: 100%;
-    }
-}
-
-/* Media Queries for Mobile Phones */
-@media (max-width: 480px) {
-    .introduction {
-        margin: 0 10px; /* Adjust margin for smaller screens */
-    }
-
-    .introduction h1 {
-        font-size: 24px; /* Decrease heading font size */
-    }
-
-    .introduction p {
-        padding: 0 10px; /* Adjust padding for smaller screens */
-        font-size: 16px; /* Decrease font size */
-    }
-
-    .content {
-        margin-top: 20px; /* Adjust spacing for smaller screens */
-        padding: 20px 0; /* Adjust padding for smaller screens */
-    }
-
-    .content h2 {
-        font-size: 22px; /* Decrease heading font size */
-    }
-
-    .content p {
-        font-size: 14px; /* Decrease paragraph font size */
-    }
-
-    .profile-card {
-        width: 140px; /* Adjust card width for smaller screens */
-    }
-
-    .profile-picture {
-        width: 80px; /* Adjust profile picture size for smaller screens */
-        height: 80px;
-        margin-bottom: 15px; /* Adjust margin for smaller screens */
-    }
-
-    .profile-picture img {
-        width: 80px;
-        height: 80px;
-    }
-}
 
 /*Category*/
 .main-category h2{
@@ -905,32 +756,7 @@ h2{
 .change-page a:hover{
     color:#f7941d;
 }
-@media (max-width: 768px) {
-    .main-category h2,
-    .main-category .content,
-    .change-page {
-        margin: 0 20px; /* Adjust margins for smaller screens */
-        text-align: center; /* Center-align text */
-    }
 
-    .banner_container img {
-        width: 80%; /* Adjust image size for smaller screens */
-    }
-}
-
-/* Media Queries for Mobile Phones */
-@media (max-width: 480px) {
-    .main-category h2,
-    .main-category .content,
-    .change-page {
-        margin: 0 10px; /* Adjust margins for smaller screens */
-        text-align: center; /* Center-align text */
-    }
-
-    .banner_container img {
-        width: 100%; /* Adjust image size for smaller screens */
-    }
-}
 /*Career*/
 
 
@@ -1165,80 +991,6 @@ h2{
 .content h4{
     color:white;
 }
-@media (max-width: 768px) {
-    .main-tips .text {
-        margin: 20px; /* Adjust margin for smaller screens */
-        padding: 20px; /* Adjust padding for smaller screens */
-    }
-
-    .main-tips .text p {
-        font-size: 18px; /* Decrease font size for paragraphs */
-    }
-
-    .tips img {
-        width: 100px; /* Adjust image size for smaller screens */
-        margin-right: 10px; /* Adjust spacing for smaller screens */
-    }
-
-    .column {
-        gap: 10px; /* Adjust spacing for smaller screens */
-    }
-
-    .column img {
-        max-width: 100%;
-    }
-
-    .movie_content {
-        flex-direction: column; /* Change to column layout for smaller screens */
-    }
-
-    .movie_content img {
-        float: none; /* Clear the float for smaller screens */
-        max-width: 100%;
-    }
-}
-
-/* Media Queries for Mobile Phones */
-@media (max-width: 480px) {
-    .main-tips {
-        margin: 0 10px; /* Adjust margin for smaller screens */
-    }
-
-    .main-tips h3 {
-        font-size: 24px; /* Decrease heading font size */
-    }
-
-    .main-tips .text {
-        margin: 10px; /* Adjust margin for smaller screens */
-        padding: 10px; /* Adjust padding for smaller screens */
-    }
-
-    .main-tips .text p {
-        font-size: 16px; /* Decrease font size for paragraphs */
-    }
-
-    .tips img {
-        width: 80px; /* Adjust image size for smaller screens */
-        margin-right: 10px; /* Adjust spacing for smaller screens */
-    }
-
-    .column {
-        gap: 10px; /* Adjust spacing for smaller screens */
-    }
-
-    .column img {
-        max-width: 100%;
-    }
-
-    .movie_content {
-        flex-direction: column; /* Change to column layout for smaller screens */
-    }
-
-    .movie_content img {
-        float: none; /* Clear the float for smaller screens */
-        max-width: 100%;
-    }
-}
 
 /*login/register*/
 .log{
@@ -1347,74 +1099,7 @@ h2{
     background-color: #eae5e5;
     color: black;
 }
-@media (max-width: 768px) {
-    .login {
-        width: 90%;
-        max-width: 320px;
-        margin: 0 auto;
-        padding: 30px;
-    }
 
-    .login .avatar {
-        width: 60px;
-        height: 60px;
-        top: -10%;
-    }
-
-    .login h1 {
-        font-size: 20px;
-    }
-
-    .login p {
-        font-size: 14px;
-    }
-
-    .login input,
-    .form-input {
-        height: 30px;
-        font-size: 14px;
-    }
-
-    .login .btn {
-        height: 30px;
-        font-size: 16px;
-    }
-}
-
-/* Media Queries for Mobile Phones */
-@media (max-width: 480px) {
-    .login {
-        width: 90%;
-        max-width: 320px;
-        margin: 0 auto;
-        padding: 20px;
-    }
-
-    .login .avatar {
-        width: 50px;
-        height: 50px;
-        top: -10%;
-    }
-
-    .login h1 {
-        font-size: 18px;
-    }
-
-    .login p {
-        font-size: 12px;
-    }
-
-    .login input,
-    .form-input {
-        height: 25px;
-        font-size: 12px;
-    }
-
-    .login .btn {
-        height: 25px;
-        font-size: 14px;
-    }
-}
 /*FAQ*/
 .faq-container {
     width: 90%;
@@ -1551,3 +1236,4 @@ h2{
 	color: #fff;
 	padding: 30px;
   }
+ 
