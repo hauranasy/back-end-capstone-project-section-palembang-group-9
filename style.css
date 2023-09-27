@@ -718,20 +718,10 @@ h2{
 }
 
 /*Category*/
-.main-category h2{
-    margin: 0 200px;
-}
-.banner_container {
-    clear: both;
-}
-.banner_container img {
-    width: 30%;
-    cursor: pointer;/*perubahan di kursor*/
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    margin-bottom: 20px;
-    border-radius: 5px;
+.banner_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .main-category .content{
     margin: 0 200px;
@@ -756,7 +746,10 @@ h2{
 .change-page a:hover{
     color:#f7941d;
 }
-
+iframe {
+    width: 550px;
+    height: 300px;
+}
 /*Career*/
 .col-6 {width: 50%;}
 .col-12 {width: 100%;}
