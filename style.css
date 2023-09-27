@@ -462,6 +462,9 @@ body {
 }
 
 /* CSS untuk mengatur gambar */
+.top-section img{
+    border-radius: 5px;
+}
 .right-image img{
      height: 100%;
      cursor: pointer;
