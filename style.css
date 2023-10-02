@@ -325,7 +325,6 @@ body {
 }
 
 .left-section img{
-    width: 100%;
     cursor: pointer;
 }
 
@@ -528,7 +527,7 @@ h2{
 .banner_container{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-self: center;
 }
 .main-category .content{
     margin: 0 200px;
