@@ -7,6 +7,11 @@ import bodyparser from "body-parser";
 
  app.use(bodyparser.urlencoded({ extended: true }))
 
+
+
+ //app.use(Expresss.static("public"));
+
+ 
  app.get("/videoEdu", (request, response) => {
     response.json({
         data: {
