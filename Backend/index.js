@@ -4,14 +4,11 @@ import bodyparser from "body-parser";
 
  const app = Express(); 
  const port = 8000; 
+ const blogRoutes = require('./routes/blogRoutes');
 
  app.use(bodyparser.urlencoded({ extended: true }))
 
-
-
  //app.use(Expresss.static("public"));
-
- 
  app.get("/videoEdu", (request, response) => {
     response.json({
         data: {
@@ -25,13 +22,20 @@ import bodyparser from "body-parser";
  });
 
 // const server = http.createServer((req, res) => {});
-
-
 app.post("/videoEdu", (request, response) =>  {
     console.log({request});
     response.json({
         author: request.body.author,
     });
+})
+
+//Blog Routes
+app.use('/blog', blogRoutes);
+
+app.use((err, req, res, next) => {
+  res.json({
+      message: err.message
+  })
 })
 
 app.listen(port, () => {
